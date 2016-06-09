@@ -1,0 +1,36 @@
+{
+  "name": "generator-beetbox",
+  "version": "0.0.1",
+  "description": "Creates a new beetbox project.",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "drupal",
+    "beetbox"
+  ],
+  "author": {
+    "name": "Thom Toogood",
+    "url": "https://github.com/beetboxvm"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beetboxvm/generator-beetbox"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fs-extra": "^0.30.0",
+    "git-clone": "^0.1.0",
+    "randpass": "^0.1.0",
+    "replaceall": "^0.1.6",
+    "yeoman-generator": "^0.23.3",
+    "yo": "^1.8.4",
+    "yosay": "^1.1.1"
+  }
+}

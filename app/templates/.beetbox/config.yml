@@ -1,0 +1,16 @@
+---
+# Vagrant config.
+vagrant_ip: <%= data.vagrant_ip %>
+
+# Beetbox settings.
+beet_project: drupal
+beet_domain: "<%= data.beet_domain %>"
+<% if (data.beet_root) { %>beet_root: "{{ beet_base }}/<%= data.beet_root %>"<% } %>
+beet_site_name: <%= data.beet_site_name %>
+
+# Drupal settings.
+drupal_create_makefile: <% if (data.drupal_download_drupal) { %>yes<% } else { %>no<% } %>
+drupal_build_makefile: <% if (data.drupal_download_drupal) { %>yes<% } else { %>no<% } %>
+drupal_install_site: <% if (data.drupal_install_site) { %>yes<% } else { %>no<% } %>
+drupal_account_name: <%= data.drupal_account_name %>
+drupal_account_pass: <%= data.drupal_account_pass %>
